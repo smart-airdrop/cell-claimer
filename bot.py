@@ -120,7 +120,6 @@ class CELL:
                     self.log(f"{green}Balance: {white}{balance/10**6}")
                 except Exception as e:
                     self.log(f"{red}Get user info error!!!")
-                    print(e)
 
                 try:
                     self.log(f"{yellow}Claiming...")
@@ -129,7 +128,6 @@ class CELL:
                     self.log(f"{green}Balance after Claim: {white}{balance/10**6}")
                 except Exception as e:
                     self.log(f"{red}Claim too early!!!")
-                    print(e)
 
                 try:
                     self.log(f"{yellow}Tapping to earn...")
@@ -144,7 +142,6 @@ class CELL:
                     self.log(f"{green}Balance after Click: {white}{balance/10**6}")
                 except Exception as e:
                     self.log(f"{red}Click error!!!")
-                    print(e)
 
             print()
             wait_time = 30 * 60
