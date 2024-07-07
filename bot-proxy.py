@@ -63,7 +63,7 @@ class CELL:
         }
 
     def proxies(self, proxy_info):
-        return {"http": f"{proxy_info}"}
+        return {"http": f"{proxy_info}", "https": f"{proxy_info}"}
 
     def user_info(self, auth_data, proxy_info):
         url = f"https://cellcoin.org/users/session"
